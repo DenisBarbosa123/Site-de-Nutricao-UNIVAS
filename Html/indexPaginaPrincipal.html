@@ -11,6 +11,37 @@
         <script src="js/bootstrap.js"></script>
 </head>
 
+<script>
+        $(function (e) {
+                var alturaJanela = $(window).height();
+
+                function redimencionar() {
+                        $('#primeira').css('height', alturaJanela);
+                        $('#segunda').css('height', alturaJanela);
+                        $('#terceira').css('height', alturaJanela);
+                }
+
+                $('#primeiro').click(function (e) {
+                        $('html,body').animate({ scrollTop: $('#primeira').offset().top }, 1000);
+
+                });
+
+                $('#segundo').click(function (e) {
+                        $('html,body').animate({ scrollTop: $('#segunda').offset().top }, 1000);
+
+                });
+
+                $('#terceiro').click(function (e) {
+                        $('html,body').animate({ scrollTop: $('#terceira').offset().top }, 1000);
+
+                });
+                $(window).resize(function (e) {
+                        redimencionar();
+                });
+                redimencionar();
+        });
+</script>
+
 <body>
         <!--
 
@@ -18,8 +49,8 @@
                 <img src="../Image/Nutricao.png" class="FotoPrincipal">
         </div>
          -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><img src="../Image/logo_univas.png"></a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light menu-principal">
+                <a class="navbar-brand" href="#"><img id="imagem-univas" src="../Image/logo_univas.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -29,19 +60,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
-                                        <a class="nav-link btn btn-outline-success" href="#">Pagina inicial<span
+                                        <a id="primeiro" class="nav-link btn btn-outline-success " href="#primeira">Pagina inicial<span
                                                         class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item active">
-                                        <a class="nav-link btn btn-outline-success" href="#">Sobre o curso<span
-                                                        class="sr-only">(current)</span></a>
+                                        <a id="segundo" class="nav-link btn btn-outline-success" href="#segunda">Sobre o curso<span
+                                                        class=" sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item active">
-                                        <a class="nav-link btn btn-outline-success" href="#">Corpo Docente<span
-                                                        class="sr-only">(current)</span></a>
+                                        <a id="terceiro" class="nav-link btn btn-outline-success" href="terceira">Corpo Docente<span
+                                                        class=" sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item active">
-                                        <a class="nav-link btn btn-outline-success" href="#">Contato<span
+                                        <a class="nav-link btn btn-outline-success">Contato<span
                                                         class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item active">
@@ -66,8 +97,6 @@
                                 </li>
                         </ul>
 
-                        <p id="p-menu">Nutrição</p>
-
                         <!--
                         <form class="form-inline my-2 my-lg-0">
                                 <input class="form-control mr-sm-2" type="search" placeholder="Search"
@@ -79,17 +108,30 @@
 
         </nav>
 
-        <div class="card Div01" style="width: 400px">
-                <img src="../Image/univasCentral.jpg" class="card-img-top ImagenUnivasCentral" alt="...">
-                <div class="card-body">
-                        <h5 class="card-title">Univás central</h5>
-                        <p class="card-text">O curso de nutrição é oferecido nos campus central da univas situado na
-                                avenida Cel. Alfredo Custódio de Paula, 320 - Pouso Alegre(MG).
-                        </p>
-                        <a href="#" class="btn btn-primary">Ir para a página</a>
+        <div id="primeira">
+                <div class="card Div01" style="width: 400px">
+                        <img src="../Image/univasCentral.jpg" class="card-img-top ImagenUnivasCentral" alt="...">
+                        <div class="card-body">
+                                <h5 class="card-title">Univás central</h5>
+                                <p class="card-text">O curso de nutrição é oferecido nos campus central da univas
+                                        situado na
+                                        avenida Cel. Alfredo Custódio de Paula, 320 - Pouso Alegre(MG).
+                                </p>
+                                <a href="#" class="btn btn-primary">Ir para a página</a>
+                        </div>
                 </div>
+
         </div>
-        
+
+        <div id="segunda">
+
+
+        </div>
+        <div id="terceira">
+
+
+        </div>
+
 </body>
 
 </html>
