@@ -1,0 +1,31 @@
+.FotoPrincipal{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.nav-link{
+    margin: 10px;
+    text-align: center;  
+}
+
+.Boord{
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+.ImagenUnivasCentral{
+    border-radius: 50px;
+}
+
+.Div01{
+    
+    position: relative;
+    left: auto;
+    background-color:greenyellow;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 50px;
+    float: left;
+}
