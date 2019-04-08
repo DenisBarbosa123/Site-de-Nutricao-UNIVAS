@@ -3,46 +3,14 @@
 
 <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>UNIVÁS - UNIVERSIDADE DO VALE DO SAPUCAÍ</title>
         <link rel="stylesheet" href="../CSS/bootstrap.css">
         <link rel="stylesheet" href="../CSS/Estilo.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="js/bootstrap.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<script>/*
-        $(function (e) {
-                var alturaJanela = $(window).height();
-
-                function redimencionar() {
-                        $('#primeira').css('height', alturaJanela);
-                        $('#segunda').css('height', alturaJanela);
-                        $('#terceira').css('height', alturaJanela);
-                }
-
-                $('#primeiro').click(function (e) {
-                        $('html,body').animate({ scrollTop: $('#primeira').offset().top }, 1000);
-
-                });
-
-                $('#segundo').click(function (e) {
-                        $('html,body').animate({ scrollTop: $('#segunda').offset().top }, 1000);
-
-                });
-
-                $('#terceiro').click(function (e) {
-                        $('html,body').animate({ scrollTop: $('#terceira').offset().top }, 1000);
-
-                });
-                $(window).resize(function (e) {
-                        redimencionar();
-                });
-                redimencionar();
-        });*/
-</script>
-
-<body>
+<body id="minha-pagina" data-spy="scroll" data-target=".navbar" data-offset="50">
         <!--
 
        <div>
@@ -51,30 +19,34 @@
          -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light menu-principal">
                 <a class="navbar-brand" href="#"><img id="imagem-univas" src="../Image/logo_univas.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse">
                         <span class="navbar-toggler-icon"></span>
                 </button>
 
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
+                        <ul class="navbar-nav navbar-right">
                                 <li class="nav-item active">
-                                        <a id="primeiro" class="nav-link btn btn-outline-success " href="#">Pagina inicial<span
-                                                        class="sr-only">(current)</span></a>
+                                        <a class="nav-link btn btn-outline-success "
+                                                href="#apresentacao-curso">Pagina
+                                                inicial<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item active">
-                                        <a id="segundo" class="nav-link btn btn-outline-success" href="#">Sobre o curso<span
-                                                        class=" sr-only">(current)</span></a>
+                                        <a class="nav-link btn btn-outline-success"
+                                                href="#sobre-curso">Sobre o
+                                                curso<span class=" sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item active">
-                                        <a id="terceiro" class="nav-link btn btn-outline-success" href="#">Corpo Docente<span
-                                                        class=" sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item active">
-                                                <a id="terceiro" class="nav-link btn btn-outline-success" href="#">Área de Atuação<span
-                                                                class=" sr-only">(current)</span></a>
+                                                <a class="nav-link btn btn-outline-success"
+                                                        href="#area-atuacao">Área de
+                                                        Atuação<span class=" sr-only">(current)</span></a>
                                         </li>
+                                <li class="nav-item active">
+                                        <a class="nav-link btn btn-outline-success"
+                                                href="#corpo-docente">Corpo
+                                                Docente<span class=" sr-only">(current)</span></a>
+                                </li>
+                                
                                 <li class="nav-item active">
                                         <a class="nav-link btn btn-outline-success">Contato<span
                                                         class="sr-only">(current)</span></a>
@@ -112,8 +84,9 @@
 
         </nav>
 
-        <section class="content-section" id="apresentacao-curso">
-                <div class="card Div01" style="width: 400px">
+        <section class="container-fluid text-center" id="apresentacao-curso">
+                <h1>Apresentação do Curso</h1>
+                <!--<div class="card Div01" style="width: 400px">
                         <img src="../Image/univasCentral.jpg" class="card-img-top ImagenUnivasCentral" alt="...">
                         <div class="card-body">
                                 <h5 class="card-title">Univás central</h5>
@@ -124,42 +97,89 @@
                                 <a href="#" class="btn btn-primary">Ir para a página</a>
                         </div>
                 </div>
+                -->
 
         </section>
 
-        <section class="content-section" id="sobre-curso">
+        <section class="container-fluid text-center" id="sobre-curso">
                 <h1 class="text-center">Sobre o curso</h1>
-                <p class="text-center">Dentro de sua tradição na área da saúde, contando com um hospital escola de referência nacional, 
-                        a Univás desenvolve, para o curso de Nutrição, um projeto pedagógico que permite uma formação 
-                        ampla do nutricionista, capacitando-o a atuar em várias frentes de trabalho, como a Nutrição Social, 
-                        atuando em programas de alimentação e vigilância sanitária em diversas entidades, a Nutrição Clínica, 
-                        atuando em consultórios, hospitais, postos de saúde, os Serviços de alimentação em empresas e instituições e 
-                        ainda em outras áreas como o Marketing de Alimentação e Nutrição e a Nutrição Esportiva. Em sua estrutura, o curso 
+                <p class="text-center">Dentro de sua tradição na área da saúde, contando com um hospital escola de
+                        referência nacional,
+                        a Univás desenvolve, para o curso de Nutrição, um projeto pedagógico que permite uma formação
+                        ampla do nutricionista, capacitando-o a atuar em várias frentes de trabalho, como a Nutrição
+                        Social,
+                        atuando em programas de alimentação e vigilância sanitária em diversas entidades, a Nutrição
+                        Clínica,
+                        atuando em consultórios, hospitais, postos de saúde, os Serviços de alimentação em empresas e
+                        instituições e
+                        ainda em outras áreas como o Marketing de Alimentação e Nutrição e a Nutrição Esportiva. Em sua
+                        estrutura, o curso
                         conta com laboratórios específicos e corpo docente altamente qualificado.
                 </p>
 
         </section>
 
-        <section class="content-section" id="area-atuacao">
+        <section class="container-fluid text-center" id="area-atuacao">
                 <h1 class="text-center">Area de Atuação</h1>
-                <p class="text-center">O profissional de Nutrição é aquele apto ao planejar, organizar, dirigir, supervisionar e avaliar serviços de alimentação 
-                        e nutrição e estudos dietéticos. É capaz também de auditar e prestar consultoria e assessoria em nutrição e dietética, 
-                        assistência e educação nutricional a coletividades de indivíduos, assistência em hospitais e outras instituições. 
-                        Também é facultado ao profissional de Nutrição a atuação no ensino superior, em cursos de graduação em Nutrição e afins.
+                <p class="text-center">O profissional de Nutrição é aquele apto ao planejar, organizar, dirigir,
+                        supervisionar e avaliar serviços de alimentação
+                        e nutrição e estudos dietéticos. É capaz também de auditar e prestar consultoria e assessoria em
+                        nutrição e dietética,
+                        assistência e educação nutricional a coletividades de indivíduos, assistência em hospitais e
+                        outras instituições.
+                        Também é facultado ao profissional de Nutrição a atuação no ensino superior, em cursos de
+                        graduação em Nutrição e afins.
                 </p>
         </section>
 
-        <section class="content-section" id="corpo-docente">
-                <h1 class="text-center">Corpo Docente</h1>
-                <p class="text-center">A Únivas conta com professores capacitados, para passar adiante todo conhecimento que possuem</p>
+        <section class="container-fluid text-center" id="corpo-docente">
+                <h1 class="base-section-title text-center">Corpo Docente</h1>
+                <p class="text-center">A Únivas conta com professores capacitados, para passar adiante todo conhecimento
+                        que possuem</p>
                 <p>Segue link:</p>
-                
+
 
         </section>
 
-        <footer class="content-section" id="contato">
-                
+        <footer class="text-center">
+                <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+                        <span class="glyphicon glyphicon-chevron-up"></span>
+                </a><br><br>
+                <p>Site desenvolvido por:  Denis Barbosa e Adriano Junior</p>
         </footer>
+
+
+        <script>
+                $(document).ready(function () {
+                        // Initialize Tooltip
+                        //$('[data-toggle="tooltip"]').tooltip();
+
+                        // Add smooth scrolling to all links in navbar + footer link
+                        $(".navbar a, footer a[href='#minha-pagina']").on('click', function (event) {
+
+                                // Make sure this.hash has a value before overriding default behavior
+                                if (this.hash !== "") {
+
+                                        // Prevent default anchor click behavior
+                                        event.preventDefault();
+
+                                        // Store hash
+                                        var hash = this.hash;
+
+                                        // Using jQuery's animate() method to add smooth page scroll
+                                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                                        $('html, body').animate({
+                                                scrollTop: $(hash).offset().top
+                                        }, 900, function () {
+
+                                                // Add hash (#) to URL when done scrolling (default click behavior)
+                                                window.location.hash = hash;
+                                        });
+                                } // End if
+                        });
+                })
+        </script>
+
 
 </body>
 
