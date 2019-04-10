@@ -5,9 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>UNIVÁS - UNIVERSIDADE DO VALE DO SAPUCAÍ</title>
+        <link rel="stylesheet" href="../CSS/bootstrap.min.css">
         <link rel="stylesheet" href="../CSS/bootstrap.css">
         <link rel="stylesheet" href="../CSS/Estilo.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
 </head>
 
 <body id="minha-pagina" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -82,66 +84,27 @@
 
         <section class="container-fluid text-center" id="apresentacao-curso">
                 <h1>Apresentação do Curso</h1>
-
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                        <img src="../Image/mulher-maca.jpg" alt="Mulher Maça" width="800" height="400">
-                                        <div class="carousel-caption">
-                                                <h3>New York</h3>
-                                                <p>The atmosphere in New York is lorem ipsum.</p>
-                                        </div>
-                                </div>
-
-                                <div class="item">
-                                        <img src="../Image/univas-central.jpg" alt="Univas Central" width="800" height="400">
-                                        <div class="carousel-caption">
-                                                <h3>Chicago</h3>
-                                                <p>Thank you, Chicago - A night we won't forget.</p>
-                                        </div>
-                                </div>
-
-                                <div class="item">
-                                        <img src="/Image/Nutricao.png" alt="Nutricao" width="800" height="400">
-                                        <div class="carousel-caption">
-                                                <h3>LA</h3>
-                                                <p>Even though the traffic was a mess, we had the best time playing at
-                                                        Venice Beach!</p>
-                                        </div>
-                                </div>
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="../Image/univas-central.jpg" alt="Primeiro Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="../Image/Nutricao.png" alt="Segundo Slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="../Image/Youtube.png" alt="Terceiro Slide">
+                          </div>
                         </div>
-
-                        <!-- Left and right controls -->
-                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Anterior</span>
                         </a>
-                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Próximo</span>
                         </a>
-                </div>
-                <!--<div class="card Div01" style="width: 400px">
-                        <img src="../Image/univasCentral.jpg" class="card-img-top ImagenUnivasCentral" alt="...">
-                        <div class="card-body">
-                                <h5 class="card-title">Univás central</h5>
-                                <p class="card-text">O curso de nutrição é oferecido nos campus central da univas
-                                        situado na
-                                        avenida Cel. Alfredo Custódio de Paula, 320 - Pouso Alegre(MG).
-                                </p>
-                                <a href="#" class="btn btn-primary">Ir para a página</a>
-                        </div>
-                </div>
-                -->
-
+                      </div>
         </section>
 
         <section class="container-fluid text-center" id="sobre-curso">
@@ -184,7 +147,7 @@
 
         </section>
 
-        <footer class="text-center">
+        <footer class="text-center ">
                 <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
                         <span class="glyphicon glyphicon-chevron-up"></span>
                 </a><br><br>
@@ -223,7 +186,7 @@
                 })
         </script>
 
-
+        <script src="../Javascript/bootstrap.min.js"></script>
 </body>
 
 </html>
