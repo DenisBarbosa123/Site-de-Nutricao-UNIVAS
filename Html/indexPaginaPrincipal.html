@@ -21,7 +21,7 @@
          -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light menu-principal">
                 <a class="navbar-brand" href="#"><img id="imagem-univas" src="../Image/logo_univas.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target='#navbarSupportedContent'>
                         <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -83,19 +83,40 @@
         </nav>
 
         <section class="container-fluid text-center" id="apresentacao-curso">
-                <h1>Apresentação do Curso</h1>
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                         <!-- Indicators -->
+        '               <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!--Slide de imagens-->
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img class="d-block w-100" src="../Image/nutricao1.jpg" alt="Primeiro Slide">
+                            <img class="img-fluid" src="../Image/nutricao1.jpg" alt="Primeiro Slide">
+                            <div class="carousel-caption">
+                                <h3>New York</h3>
+                                <p>The atmosphere in New York is lorem ipsum.</p>
+                            </div>
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="../Image/nutricao2.jpg" alt="Segundo Slide" >
+                            <img class="img-fluid" src="../Image/nutricao2.jpg" alt="Segundo Slide">
+                            <div class="carousel-caption">
+                                <h3>New York</h3>
+                                <p>The atmosphere in New York is lorem ipsum.</p>
+                            </div>
                           </div>
                           <div class="carousel-item">
-                            <img class="d-block w-100" src="../Image/nutricao3.jpg" alt="Terceiro Slide">
+                            <img class="img-fluid" src="../Image/nutricao3.jpg" alt="Terceiro Slide">
+                            <div class="carousel-caption">
+                                <h3>New York</h3>
+                                <p>The atmosphere in New York is lorem ipsum.</p>
+                            </div>
                           </div>
                         </div>
+
+                        <!--Botoes de navegação dos Slides-->
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="sr-only">Anterior</span>
