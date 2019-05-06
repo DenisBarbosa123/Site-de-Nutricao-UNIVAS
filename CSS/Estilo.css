@@ -54,7 +54,7 @@ section{
     
 }
 #sobre-curso{
-    background-color: red;
+    background-color: white;
 }
 #corpo-docente{
     background-color: blue;
@@ -95,4 +95,10 @@ section{
 .icone{
     width: 160px;
     height: 160px;
+    max-width: 150px; margin:0 auto; display: block;
 }
+
+div.sc{
+    display: inline-block;
+}
+
