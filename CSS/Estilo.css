@@ -65,7 +65,7 @@ section{
 
 .carousel-inner img {
     width: 100%;
-    height:650px; /*necessario arrumar*/
+    max-height:650px;
     /* Set width to 100% */
     margin: auto;
 }
@@ -86,4 +86,8 @@ section{
 
 .footerDesenv{
     background-color: green;
+}
+
+#valores{
+    background-color: blueviolet;
 }
