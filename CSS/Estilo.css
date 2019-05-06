@@ -91,3 +91,8 @@ section{
 #valores{
     background-color: blueviolet;
 }
+
+.icone{
+    width: 160px;
+    height: 160px;
+}
