@@ -1,104 +1,152 @@
-html {
-    width: 100%;
-    height: 100%;
-  }
-
-.menu-principal{
-    width: 100%;
-    position: fixed;
-    z-index: 99;
-    top:0;
-	transition: all .5s;
-}
-h1,p{
-    text-align: center;
-}
-.FotoPrincipal{
-    width: 100%;
-    height: 100px;
-    border-radius: 10px;
-}
-.nav-link{
-    margin: 10px;
-    text-align: center;  
-}
-
-.Boord{
-    border-radius: 10px;
-    margin-right: 5px;
-    margin-left: 15px;
-}
-
-.ImagenUnivasCentral{
-    border-radius: 50px;
-}
-
-.Div01{
-    position: absolute;
-    left: auto;
-    background-color:greenyellow;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    border-radius: 50px;
-    float: left;
-}
-
-section{
-    padding-top:10%;
-    padding-bottom:10%;
-}
-
-#apresentacao-curso{
-    padding:0%;
-    
-}
-#sobre-curso{
-    background-color: white;
-}
-#corpo-docente{
-    background-color: blue;
-}
-#area-atuacao{
-    background-color:indigo;
-}
-
-.carousel-inner img {
-    width: 100%;
-    max-height:650px;
-    /* Set width to 100% */
-    margin: auto;
-}
-
-.carousel-caption h3 {
-    color: black;
-}
-.carousel-caption p {
-    color: black;
-}
-
-@media (max-width: 600px) {
-    .carousel-caption {
-        display: none;
-        /* Hide the carousel text when the screen is less than 600 pixels wide */
+    html {
+        width: 100%;
+        height: 100%;
+        background-color: white;
     }
-}
-
-.footerDesenv{
-    background-color: green;
-}
-
-#valores{
-    background-color: blueviolet;
-}
-
-.icone{
-    width: 160px;
-    height: 160px;
-    max-width: 150px; margin:0 auto; display: block;
-}
-
-div.sc{
-    display: inline-block;
-}
-
+    
+    .menu-principal {
+        width: 100%;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        transition: all .5s;
+    }
+    
+    h1,
+    p {
+        text-align: center;
+    }
+    
+    .nav-link {
+        margin: 10px;
+        text-align: center;
+    }
+    
+    .ImagenUnivasCentral {
+        border-radius: 50px;
+    }
+    
+    .Div01 {
+        position: absolute;
+        left: auto;
+        background-color: greenyellow;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        border-radius: 50px;
+        float: left;
+    }
+    
+    section {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    
+    #apresentacao-curso {
+        padding: 60px 0px 0px 0px;
+    }
+    
+    #sobre-curso {
+        background-color: white;
+    }
+    
+    #corpo-docente {
+        background-color: blue;
+    }
+    
+    #area-atuacao {
+        background-color: indigo;
+    }
+    
+    .carousel-inner img {
+        width: 100%;
+        max-height: 550px;
+        /* Set width to 100% */
+        margin: auto;
+    }
+    
+    .carousel-caption h3 {
+        color: black;
+    }
+    
+    .carousel-caption p {
+        color: black;
+    }
+    
+    @media (max-width: 600px) {
+        .carousel-caption {
+            display: none;
+            /* Hide the carousel text when the screen is less than 600 pixels wide */
+        }
+    }
+    
+    .footerDesenv {
+        background-color: green;
+    }
+    
+    .icone {
+        width: 160px;
+        height: 160px;
+        max-width: 150px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    div.sc {
+        display: inline-block;
+    }
+    /* Style all font awesome icons */
+    
+    .fa {
+        padding: 20px;
+        margin: 5px;
+        font-size: 10%;
+        width: 60px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 60%;
+    }
+    /* Facebook */
+    
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    /* Twitter */
+    
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+    /*Instagram*/
+    
+    .fa-instagram {
+        background: rgb(5, 71, 122);
+        color: white;
+    }
+    /*youtube*/
+    
+    .fa-youtube {
+        background: rgb(231, 14, 14);
+        color: white;
+    }
+    /*linkedin*/
+    
+    .fa-linkedin {
+        background: rgb(74, 71, 235);
+        color: white;
+    }
+    
+    footer {
+        background-color: rgb(67, 69, 71);
+        padding-top: 40px;
+    }
+    
+    .container {
+        padding-bottom: 20px;
+    }
+    
+    div.footer-copyright {
+        color: white;
+        background-color: rgba(31, 29, 29, 0.267);
+    }
