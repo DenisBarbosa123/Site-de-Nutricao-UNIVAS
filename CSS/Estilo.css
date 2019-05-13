@@ -138,15 +138,30 @@
     
     div.button-group {
         padding-top: 30px;
+        padding-bottom: 30px;
     }
     
     div.btn-information {
         display: inline-block;
         margin: -5px;
-        margin-top: 5px;
+        margin-top: 7px;
     }
     
     .btn-success {
         width: 300px;
         height: 100px;
+    }
+    /*ESCONDER TABELAS*/
+    
+    .hide {
+        display: none;
+    }
+    
+    #comentarios {
+        background-color: aquamarine;
+    }
+    
+    .video {
+        display: inline-block;
+        margin: 20px;
     }
