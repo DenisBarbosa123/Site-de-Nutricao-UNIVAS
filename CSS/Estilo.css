@@ -165,3 +165,23 @@
         display: inline-block;
         margin: 20px;
     }
+    
+    div.info {
+        background-color: rgb(195, 199, 204);
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    
+    span.text-bold {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    div.videos {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
