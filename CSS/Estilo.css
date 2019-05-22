@@ -41,8 +41,8 @@ section .container {
     padding: 60px 0px 0px 0px;
 }
 
-#sobre-curso {
-    background-color: white;
+#more-informations {
+    background-color: rgba(240, 255, 240, 0.788);
 }
 
 #corpo-docente {
