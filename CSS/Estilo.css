@@ -2,7 +2,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: white;
-    /*min-width: 600px;*/
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .menu-principal {
@@ -32,6 +32,11 @@ section.container-fluid {
     padding-bottom: 10%;
 }
 
+section .container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
 #apresentacao-curso {
     padding: 60px 0px 0px 0px;
 }
@@ -44,8 +49,17 @@ section.container-fluid {
     background-color: blue;
 }
 
-#area-atuacao {
-    background-color: gray;
+#comentarios {
+    background-color: cornsilk;
+}
+
+.card {
+    background-color: green;
+}
+
+.card h1,
+.card p {
+    color: white;
 }
 
 .carousel-inner img {
@@ -57,17 +71,6 @@ section.container-fluid {
 
 .carousel-caption h3 {
     color: black;
-}
-
-.carousel-caption p {
-    color: black;
-}
-
-@media (max-width: 600px) {
-    .carousel-caption {
-        display: none;
-        /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
 }
 
 .icone {
@@ -176,16 +179,8 @@ div.btn-information {
     display: none;
 }
 
-#comentarios {
-    background-color: aquamarine;
-}
 
-.video {
-    display: inline-block;
-    width: 40%;
-    height: 300px;
-    margin: 60px;
-}
+/*INFORMACOES SOBRE CURSO*/
 
 div.info {
     background-color: rgb(195, 199, 204);
@@ -201,16 +196,8 @@ span.text-bold {
     text-transform: uppercase;
 }
 
-div.videos {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+div.col-md-6 {
+    display: inline-block;
+    padding: 2%;
+    width: 45%;
 }
-
-.video-youtube{
-    width: 100%;
-    height: 100%;
-}
-
-
-
